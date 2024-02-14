@@ -1,0 +1,676 @@
+@-webkit-keyframes border-line {
+    0% {
+        width: 85%
+    }
+    50% {
+        width: 50%
+    }
+    to {
+        width: 50%
+    }
+}
+
+@keyframes border-line {
+    0% {
+        width: 85%
+    }
+    50% {
+        width: 50%
+    }
+    to {
+        width: 50%
+    }
+}
+
+.tkapp-cta {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    text-decoration: none;
+    transition: width .6s;
+    transition-property: color, background-color, border-color, width;
+    transition-duration: .6s;
+    margin: 0 -3px 1px 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    padding: 0
+}
+
+.tkapp-cta:focus:not(.has-keyboardfocus) {
+    outline: 0
+}
+
+.tkapp-cta:focus .tkapp-cta__text:after {
+    width: 100%
+}
+
+.tkapp-cta:hover:not(.has-keyboardfocus) {
+    outline: 0
+}
+
+.tkapp-cta:hover .tkapp-cta__text:after {
+    width: 100%
+}
+
+.has-touch .tkapp-cta:hover,
+.has-touch .tkapp-cta:hover .tkapp-cta__text,
+.has-touch .tkapp-cta:hover .tkapp-cta__text:after,
+.has-touch .tkapp-cta:hover .tkapp-cta__text:before {
+    transition-duration: 0s!important
+}
+
+.is-ios .tkapp-cta:hover .tkapp-cta__text {
+    transition: none
+}
+
+.is-ios .tkapp-cta:hover .tkapp-cta__text:after,
+.is-ios .tkapp-cta:hover .tkapp-cta__text:before {
+    width: 0!important;
+    transition: none!important
+}
+
+.tkapp-cta.has-keyboardfocus {
+    outline: 2px solid #00a0e3
+}
+
+.tkapp-cta--withicon {
+    padding-right: 56px
+}
+
+.tkapp-cta__text {
+    display: inline-block;
+    line-height: 1.2;
+    position: relative
+}
+
+.tkapp-cta__text:after {
+    content: " ";
+    border-bottom: 2px solid transparent;
+    width: 0;
+    display: block;
+    height: 2px;
+    transition: width .5s cubic-bezier(.191, 1, .22, 1)
+}
+
+.tkapp-cta__icon-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block
+}
+
+.tkapp-cta__icon-container.tkapp-cta__icon--arrow-before {
+    left: 0;
+    right: auto
+}
+
+.tkapp-cta__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 32px
+}
+
+.tkapp-cta__icon--arrow:after {
+    content: "";
+    position: absolute;
+    right: 28px;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    margin-top: -8px;
+    transform: rotate(45deg);
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent
+}
+
+.tkapp-cta__icon--arrow-before:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    margin-top: -5px;
+    transform: rotate(45deg);
+    border-top: 1px solid #454542;
+    border-right: 1px solid #454542
+}
+
+.tkapp-cta--m .tkapp-cta__text,
+.tkapp-cta--s .tkapp-cta__text {
+    padding: 14px 20px 10px
+}
+
+.tkapp-cta--m .tkapp-cta__icon-container,
+.tkapp-cta--s .tkapp-cta__icon-container {
+    width: 50px
+}
+
+.tkapp-cta--m.tkapp-cta--icon,
+.tkapp-cta--s.tkapp-cta--icon {
+    min-width: 50px;
+    min-height: 50px
+}
+
+.tkapp-cta--m.tkapp-cta--icon .tkapp-cta__text,
+.tkapp-cta--s.tkapp-cta--icon .tkapp-cta__text {
+    margin-right: 50px;
+    padding-right: 0
+}
+
+.tkapp-cta--m.tkapp-cta--left.tkapp-cta--icon .tkapp-cta__text,
+.tkapp-cta--s.tkapp-cta--left.tkapp-cta--icon .tkapp-cta__text {
+    margin-right: 0;
+    margin-left: 50px;
+    padding-right: 20px;
+    padding-left: 0
+}
+
+.tkapp-cta--m.tkapp-cta--left .tkapp-cta__icon-container,
+.tkapp-cta--s.tkapp-cta--left .tkapp-cta__icon-container {
+    left: 0;
+    right: auto
+}
+
+.tkapp-cta--xl {
+    width: 100%;
+    text-align: center
+}
+
+.tkapp-cta--xl .tkapp-cta__text {
+    padding: 16px 20px 14px
+}
+
+.tkapp-cta--xl .tkapp-cta__icon-container {
+    display: none
+}
+
+.tkapp-cta--primary:focus .tkapp-cta__text:after,
+.tkapp-cta--primary:hover .tkapp-cta__text:after {
+    width: 100%
+}
+
+.has-touch .tkapp-cta--primary:hover,
+.has-touch .tkapp-cta--primary:hover .tkapp-cta__text,
+.has-touch .tkapp-cta--primary:hover .tkapp-cta__text:after,
+.has-touch .tkapp-cta--primary:hover .tkapp-cta__text:before {
+    transition-duration: 0s!important
+}
+
+.is-ios .tkapp-cta--primary:hover .tkapp-cta__text {
+    transition: none
+}
+
+.is-ios .tkapp-cta--primary:hover .tkapp-cta__text:after,
+.is-ios .tkapp-cta--primary:hover .tkapp-cta__text:before {
+    width: 0!important;
+    transition: none!important
+}
+
+.tkapp-cta--primary.is-disabled:focus .tkapp-cta__text:after,
+.tkapp-cta--primary.is-disabled:hover .tkapp-cta__text:after {
+    width: 0;
+    transition: none
+}
+
+.has-touch .tkapp-cta--primary.is-disabled:hover,
+.has-touch .tkapp-cta--primary.is-disabled:hover .tkapp-cta__text,
+.has-touch .tkapp-cta--primary.is-disabled:hover .tkapp-cta__text:after,
+.has-touch .tkapp-cta--primary.is-disabled:hover .tkapp-cta__text:before {
+    transition-duration: 0s!important
+}
+
+.is-ios .tkapp-cta--primary.is-disabled:hover .tkapp-cta__text {
+    transition: none
+}
+
+.is-ios .tkapp-cta--primary.is-disabled:hover .tkapp-cta__text:after,
+.is-ios .tkapp-cta--primary.is-disabled:hover .tkapp-cta__text:before {
+    width: 0!important;
+    transition: none!important
+}
+
+.tkapp-cta--primary.tkapp-cta--dark {
+    background-color: #454542;
+    color: #f5f2ef
+}
+
+.tkapp-cta--primary.tkapp-cta--dark:focus {
+    background-color: #292927;
+    color: #f5f2ef
+}
+
+.tkapp-cta--primary.tkapp-cta--dark:focus .tkapp-cta__text:after {
+    border-color: #f5f2ef
+}
+
+.tkapp-cta--primary.tkapp-cta--dark:hover {
+    background-color: #292927;
+    color: #f5f2ef
+}
+
+.tkapp-cta--primary.tkapp-cta--dark:hover .tkapp-cta__text:after {
+    border-color: #f5f2ef
+}
+
+.has-touch .tkapp-cta--primary.tkapp-cta--dark:hover,
+.has-touch .tkapp-cta--primary.tkapp-cta--dark:hover .tkapp-cta__text,
+.has-touch .tkapp-cta--primary.tkapp-cta--dark:hover .tkapp-cta__text:after,
+.has-touch .tkapp-cta--primary.tkapp-cta--dark:hover .tkapp-cta__text:before {
+    transition-duration: 0s!important
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--dark:hover .tkapp-cta__text {
+    transition: none
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--dark:hover .tkapp-cta__text:after,
+.is-ios .tkapp-cta--primary.tkapp-cta--dark:hover .tkapp-cta__text:before {
+    width: 0!important;
+    transition: none!important
+}
+
+.tkapp-cta--primary.tkapp-cta--dark .tkapp-cta__text:after {
+    border-color: #f5f2ef
+}
+
+.tkapp-cta--primary.tkapp-cta--dark .tkapp-cta__icon {
+    fill: #f5f2ef
+}
+
+.tkapp-cta--primary.tkapp-cta--dark .tkapp-cta__icon--arrow:after {
+    border-color: #f5f2ef
+}
+
+.tkapp-cta--primary.tkapp-cta--dark.is-disabled {
+    background-color: #f5f2ef;
+    color: #dad6d1
+}
+
+.tkapp-cta--primary.tkapp-cta--dark.is-disabled .tkapp-cta__icon {
+    fill: #dad6d1
+}
+
+.tkapp-cta--primary.tkapp-cta--dark.is-disabled .tkapp-cta__icon--arrow:after {
+    border-color: #dad6d1
+}
+
+.tkapp-cta--primary.tkapp-cta--light {
+    background-color: #f5f2ef;
+    color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--light:focus {
+    color: #292927
+}
+
+.tkapp-cta--primary.tkapp-cta--light:focus .tkapp-cta__text:after {
+    border-color: #292927
+}
+
+.tkapp-cta--primary.tkapp-cta--light:hover {
+    color: #292927
+}
+
+.tkapp-cta--primary.tkapp-cta--light:hover .tkapp-cta__text:after {
+    border-color: #292927
+}
+
+.has-touch .tkapp-cta--primary.tkapp-cta--light:hover,
+.has-touch .tkapp-cta--primary.tkapp-cta--light:hover .tkapp-cta__text,
+.has-touch .tkapp-cta--primary.tkapp-cta--light:hover .tkapp-cta__text:after,
+.has-touch .tkapp-cta--primary.tkapp-cta--light:hover .tkapp-cta__text:before {
+    transition-duration: 0s!important
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--light:hover .tkapp-cta__text {
+    transition: none
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--light:hover .tkapp-cta__text:after,
+.is-ios .tkapp-cta--primary.tkapp-cta--light:hover .tkapp-cta__text:before {
+    width: 0!important;
+    transition: none!important
+}
+
+.tkapp-cta--primary.tkapp-cta--light .tkapp-cta__icon {
+    fill: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--light .tkapp-cta__icon--arrow:after,
+.tkapp-cta--primary.tkapp-cta--light .tkapp-cta__text:after {
+    border-color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--light.is-disabled {
+    background-color: #f5f2ef;
+    color: #dad6d1
+}
+
+.tkapp-cta--primary.tkapp-cta--memberlight {
+    background-color: #e8e000;
+    color: #292927
+}
+
+.tkapp-cta--primary.tkapp-cta--memberlight .tkapp-cta__text:after {
+    border-color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--memberlight:focus,
+.tkapp-cta--primary.tkapp-cta--memberlight:hover {
+    color: #000
+}
+
+.has-touch .tkapp-cta--primary.tkapp-cta--memberlight:hover,
+.has-touch .tkapp-cta--primary.tkapp-cta--memberlight:hover .tkapp-cta__text,
+.has-touch .tkapp-cta--primary.tkapp-cta--memberlight:hover .tkapp-cta__text:after,
+.has-touch .tkapp-cta--primary.tkapp-cta--memberlight:hover .tkapp-cta__text:before {
+    transition-duration: 0s!important
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--memberlight:hover .tkapp-cta__text {
+    transition: none
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--memberlight:hover .tkapp-cta__text:after,
+.is-ios .tkapp-cta--primary.tkapp-cta--memberlight:hover .tkapp-cta__text:before {
+    width: 0!important;
+    transition: none!important
+}
+
+.tkapp-cta--primary.tkapp-cta--memberlight .tkapp-cta__icon {
+    fill: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--memberlight .tkapp-cta__icon--arrow:after {
+    border-color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--jobvacancy {
+    background-color: #009ee3;
+    color: #fff
+}
+
+.tkapp-cta--primary.tkapp-cta--jobvacancy .tkapp-cta__text:after {
+    border-color: #fff
+}
+
+.tkapp-cta--primary.tkapp-cta--jobvacancy .tkapp-cta__icon {
+    fill: #fff
+}
+
+.tkapp-cta--primary.tkapp-cta--jobvacancy .tkapp-cta__icon--arrow:after {
+    border-color: #fff
+}
+
+.tkapp-cta--primary.tkapp-cta--service {
+    background-color: #f8f5c6;
+    color: #292927;
+    text-align: center
+}
+
+.tkapp-cta--primary.tkapp-cta--service .tkapp-cta__text:after {
+    border-color: transparent
+}
+
+.tkapp-cta--primary.tkapp-cta--memberdark {
+    background-color: #e8e000;
+    color: #292927
+}
+
+.tkapp-cta--primary.tkapp-cta--memberdark .tkapp-cta__text:after {
+    border-color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--memberdark:focus,
+.tkapp-cta--primary.tkapp-cta--memberdark:hover {
+    color: #000
+}
+
+.has-touch .tkapp-cta--primary.tkapp-cta--memberdark:hover,
+.has-touch .tkapp-cta--primary.tkapp-cta--memberdark:hover .tkapp-cta__text,
+.has-touch .tkapp-cta--primary.tkapp-cta--memberdark:hover .tkapp-cta__text:after,
+.has-touch .tkapp-cta--primary.tkapp-cta--memberdark:hover .tkapp-cta__text:before {
+    transition-duration: 0s!important
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--memberdark:hover .tkapp-cta__text {
+    transition: none
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--memberdark:hover .tkapp-cta__text:after,
+.is-ios .tkapp-cta--primary.tkapp-cta--memberdark:hover .tkapp-cta__text:before {
+    width: 0!important;
+    transition: none!important
+}
+
+.tkapp-cta--primary.tkapp-cta--memberdark .tkapp-cta__text {
+    padding-right: 20px
+}
+
+.tkapp-cta--primary.tkapp-cta--memberdark .tkapp-cta__icon {
+    fill: #e8e000
+}
+
+.tkapp-cta--primary.tkapp-cta--memberdark .tkapp-cta__icon--arrow:after {
+    border-color: #e8e000
+}
+
+.tkapp-cta--primary.tkapp-cta--memberdark .tkapp-cta__icon-container {
+    background-color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark {
+    background-color: #454542;
+    color: #bee2e9
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark:focus {
+    color: #d9eef2
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark:focus .tkapp-cta__text:after {
+    border-color: #bee2e9
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark:hover {
+    color: #d9eef2
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark:hover .tkapp-cta__text:after {
+    border-color: #bee2e9
+}
+
+.has-touch .tkapp-cta--primary.tkapp-cta--icebluedark:hover,
+.has-touch .tkapp-cta--primary.tkapp-cta--icebluedark:hover .tkapp-cta__text,
+.has-touch .tkapp-cta--primary.tkapp-cta--icebluedark:hover .tkapp-cta__text:after,
+.has-touch .tkapp-cta--primary.tkapp-cta--icebluedark:hover .tkapp-cta__text:before {
+    transition-duration: 0s!important
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--icebluedark:hover .tkapp-cta__text {
+    transition: none
+}
+
+.is-ios .tkapp-cta--primary.tkapp-cta--icebluedark:hover .tkapp-cta__text:after,
+.is-ios .tkapp-cta--primary.tkapp-cta--icebluedark:hover .tkapp-cta__text:before {
+    width: 0!important;
+    transition: none!important
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark .tkapp-cta__icon {
+    fill: #bee2e9
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark .tkapp-cta__icon--arrow:after {
+    border-color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark.is-disabled {
+    background-color: #f5f2ef;
+    color: #bee2e9
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark.is-disabled .tkapp-cta__icon {
+    fill: #bee2e9
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluedark.is-disabled .tkapp-cta__icon--arrow:after {
+    border-color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluelight {
+    background-color: #bee2e9;
+    color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluelight .tkapp-cta__text:after {
+    border-color: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluelight .tkapp-cta__icon {
+    fill: #454542
+}
+
+.tkapp-cta--primary.tkapp-cta--icebluelight .tkapp-cta__icon--arrow:after {
+    border-color: #454542
+}
+
+.tkapp-cta--secondary:focus .tkapp-cta__text:after,
+.tkapp-cta--secondary:hover .tkapp-cta__text:after {
+    width: 100%
+}
+
+.has-touch .tkapp-cta--secondary:hover,
+.has-touch .tkapp-cta--secondary:hover .tkapp-cta__text,
+.has-touch .tkapp-cta--secondary:hover .tkapp-cta__text:after,
+.has-touch .tkapp-cta--secondary:hover .tkapp-cta__text:before {
+    transition-duration: 0s!important
+}
+
+.is-ios .tkapp-cta--secondary:hover .tkapp-cta__text {
+    transition: none
+}
+
+.is-ios .tkapp-cta--secondary:hover .tkapp-cta__text:after,
+.is-ios .tkapp-cta--secondary:hover .tkapp-cta__text:before {
+    width: 0!important;
+    transition: none!important
+}
+
+.tkapp-cta--secondary.tkapp-cta--dark {
+    background-color: transparent;
+    color: #454542;
+    border: 2px solid #a09f9e
+}
+
+.tkapp-cta--secondary.tkapp-cta--dark .tkapp-cta__text:after {
+    border-color: #a09f9e
+}
+
+.tkapp-cta--secondary.tkapp-cta--dark .tkapp-cta__icon {
+    fill: #454542
+}
+
+.tkapp-cta--secondary.tkapp-cta--dark .tkapp-cta__icon--arrow:after {
+    border-color: #454542
+}
+
+.tkapp-cta--secondary.tkapp-cta--dark.is-disabled {
+    border-color: #f5f2ef;
+    color: #dad6d1
+}
+
+.tkapp-cta--secondary.tkapp-cta--light {
+    background-color: #454542;
+    color: #f5f2ef;
+    border: 2px solid #f5f2ef
+}
+
+.tkapp-cta--secondary.tkapp-cta--light .tkapp-cta__text:after {
+    border-color: #f5f2ef
+}
+
+.tkapp-cta--secondary.tkapp-cta--light .tkapp-cta__icon {
+    fill: #f5f2ef
+}
+
+.tkapp-cta--secondary.tkapp-cta--light .tkapp-cta__icon--arrow:after {
+    border-color: #f5f2ef
+}
+
+.tkapp-cta--secondary.tkapp-cta--light.is-disabled {
+    border-color: #f5f2ef;
+    color: #dad6d1
+}
+
+.tkapp-cta--secondary.tkapp-cta--icebluelight {
+    color: #454542;
+    border: 2px solid #bee2e9
+}
+
+.tkapp-cta--secondary.tkapp-cta--icebluelight .tkapp-cta__text:after {
+    border-color: #bee2e9
+}
+
+.tkapp-cta--secondary.tkapp-cta--icebluelight .tkapp-cta__icon {
+    fill: #bee2e9
+}
+
+.tkapp-cta--secondary.tkapp-cta--icebluelight .tkapp-cta__icon--arrow:after {
+    border-color: #454542
+}
+
+@media screen and (max-width:760px) {
+    .tkapp-cta--m .tkapp-cta__text {
+        padding: 22px 30px 21px
+    }
+    .tkapp-cta--m .tkapp-cta__icon-container {
+        width: 65px
+    }
+    .tkapp-cta--m.tkapp-cta--icon {
+        min-width: 65px;
+        min-height: 65px
+    }
+    .tkapp-cta--m.tkapp-cta--icon .tkapp-cta__text {
+        margin-right: 65px;
+        padding-right: 0
+    }
+    .tkapp-cta--m.tkapp-cta--left.tkapp-cta--icon .tkapp-cta__text {
+        margin-right: 0;
+        margin-left: 65px;
+        padding-right: 40px;
+        padding-left: 0
+    }
+    .tkapp-cta--m.tkapp-cta--left .tkapp-cta__icon-container {
+        left: 0;
+        right: auto
+    }
+    .tkapp-cta--s .tkapp-cta__text {
+        padding: 19px 20px 13px
+    }
+    .tkapp-cta--s .tkapp-cta__icon-container {
+        width: 56px
+    }
+    .tkapp-cta--s.tkapp-cta--icon {
+        min-width: 56px;
+        min-height: 56px
+    }
+    .tkapp-cta--s.tkapp-cta--icon .tkapp-cta__text {
+        margin-right: 56px;
+        padding-right: 0
+    }
+    .tkapp-cta--s.tkapp-cta--left.tkapp-cta--icon .tkapp-cta__text {
+        margin-right: 0;
+        margin-left: 56px;
+        padding-right: 40px;
+        padding-left: 0
+    }
+    .tkapp-cta--s.tkapp-cta--left .tkapp-cta__icon-container {
+        left: 0;
+        right: auto
+    }
+}

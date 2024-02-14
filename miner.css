@@ -1,0 +1,228 @@
+body {
+    overflow-x: visible!important
+}
+
+.layout-tk-viewport {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto 120px;
+    padding: 0 40px
+}
+
+.layout-tk-viewport:before {
+    content: "";
+    display: table
+}
+
+.layout-tk-viewport:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden
+}
+
+.layout-tk-viewport-container {
+    background-color: #fff
+}
+
+.layout-tk-viewport-container:before {
+    content: "";
+    display: table
+}
+
+.layout-tk-viewport-container:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden
+}
+
+.layout-tk-viewport .layout-tk-viewport-container .layout-tk-viewport-content {
+    padding-left: 8.3969465649%;
+    padding-right: 8.3969465649%
+}
+
+.layout-tk-viewport .layout-tk-viewport-container .layout-tk-viewport-content:before {
+    content: "";
+    display: table
+}
+
+.layout-tk-viewport .layout-tk-viewport-container .layout-tk-viewport-content:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden
+}
+
+@media screen and (max-width:1023px) {
+    .layout-tk-viewport .layout-tk-viewport-container .layout-tk-viewport-content {
+        padding-left: 6vw;
+        padding-right: 6vw
+    }
+}
+
+.layout-tk-viewport .layout-tk-viewport-container .layout-tk-viewport-content.layout-tk-viewport-content-oks {
+    padding-left: 16.7938931298%;
+    padding-right: 16.7938931298%
+}
+
+@media screen and (max-width:1023px) {
+    .layout-tk-viewport .layout-tk-viewport-container .layout-tk-viewport-content.layout-tk-viewport-content-oks {
+        padding-left: 6vw;
+        padding-right: 6vw
+    }
+}
+
+.layout-tk-viewport .tkform-main-content {
+    min-height: 30vh;
+    width: 100%
+}
+
+.layout-tk-viewport .tkform-sidebar {
+    display: none
+}
+
+.layout-tk-viewport .layout-tk-viewport-container--borderless {
+    padding-top: 0;
+    background-color: #fff
+}
+
+.layout-tk-viewport .layout-tk-viewport-container--borderless+.layout-tk-viewport-container {
+    margin-top: 0;
+    padding-top: 0
+}
+
+.layout-tk-viewport .layout-tk-viewport-container--borderless .layout-tk-viewport-content {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.layout-tk-viewport--fullscreen {
+    margin: 0;
+    padding: 0;
+    max-width: 100%
+}
+
+.layout-tk-viewport--fullscreen .layout-tk-viewport-container {
+    margin-top: 0;
+    padding-top: 0
+}
+
+.layout-tk-viewport--fullscreen .layout-tk-viewport-container .layout-tk-viewport-content {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.u-viewport--login {
+    background: #eceae8
+}
+
+.u-viewport--login .layout-tk-viewport {
+    background: #eceae8;
+    margin-bottom: 0;
+    padding-bottom: 60px
+}
+
+.u-viewport--login .layout-tk-viewport .layout-tk-viewport-container--login {
+    padding-top: 0;
+    background-image: linear-gradient(180deg, rgba(236, 234, 232, 0) 0, rgba(236, 234, 232, 0) 80px, #eceae8 81px, #eceae8);
+    margin-bottom: 20px
+}
+
+.u-viewport--login .layout-tk-viewport .layout-tk-viewport-container--login:before {
+    content: "";
+    display: table
+}
+
+.u-viewport--login .layout-tk-viewport .layout-tk-viewport-container--login:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden
+}
+
+.u-viewport--login .layout-tk-viewport .layout-tk-viewport-container--loginpreview {
+    background: #fff;
+    margin-top: 0;
+    padding: 20px 40px 40px
+}
+
+.is-bereich-faq .u-viewport--login,
+.is-bereich-faq .u-viewport--login .layout-tk-viewport {
+    background: #f8f5c6
+}
+
+.is-bereich-faq .u-viewport--login .layout-tk-viewport .layout-tk-viewport-container--login {
+    background-image: linear-gradient(180deg, rgba(248, 245, 198, 0) 0, rgba(248, 245, 198, 0) 80px, #f8f5c6 81px, #f8f5c6)
+}
+
+.is-bereich-meinetk .u-viewport--login,
+.is-bereich-meinetk .u-viewport--login .layout-tk-viewport {
+    background: #bee2e9
+}
+
+.is-bereich-meinetk .u-viewport--login .layout-tk-viewport .layout-tk-viewport-container--login {
+    background-image: linear-gradient(180deg, rgba(190, 226, 233, 0) 0, rgba(190, 226, 233, 0) 80px, #bee2e9 81px, #bee2e9)
+}
+
+.ui-datalist .ui-datalist-nobullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+@media screen and (max-width:1024px) {
+    .layout-tk-viewport {
+        padding-left: 40px;
+        padding-right: 40px
+    }
+    .layout-tk-viewport .tkform-main-content {
+        width: 100%;
+        padding-left: 0
+    }
+    .layout-tk-viewport .tkform-sidebar {
+        display: none
+    }
+    .layout-tk-viewport .tkform-main-content--borderless {
+        padding-left: 0
+    }
+    .layout-tk-viewport--fullscreen {
+        padding-left: 0;
+        padding-right: 0
+    }
+}
+
+@media screen and (max-width:760px) {
+    .layout-tk-viewport {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 60px
+    }
+    .layout-tk-viewport .tkform-main-content {
+        width: auto;
+        padding-left: 0;
+        float: none
+    }
+    .layout-tk-viewport .tkform-sidebar {
+        display: none
+    }
+    .layout-tk-viewport--fullscreen {
+        padding: 0
+    }
+    .layout-tk-viewport--fullscreen .layout-tk-viewport-container {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .layout-tk-viewport--login {
+        padding: 0
+    }
+}

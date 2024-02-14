@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="icon" viewBox="0 0 13 24">
+			<polygon points="10.24 2.034 11.011 2.669 3.297 12.041 11.003 21.368 10.231 22.005 2 12.042 10.24 2.034"/>
+    </symbol>
+    <use xlink:href="#icon" />
+</svg>

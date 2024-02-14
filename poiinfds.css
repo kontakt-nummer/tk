@@ -1,0 +1,291 @@
+.kontaktoptionen {
+    list-style: none;
+    padding-left: 0
+}
+
+.kontaktoptionen__eintrag {
+    border-top: 2px solid #f8f5c6
+}
+
+.kontaktoptionen__eintrag:first-child {
+    border-top: none
+}
+
+.kontaktoptionen__eintrag.kontaktoptionen__eintrag--primary+.kontaktoptionen__eintrag--secondary {
+    border-top: none;
+    margin-top: 30px
+}
+
+.kontaktoption {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.kontaktoption.flex-grid,
+.kontaktoption .flex-grid {
+    flex-wrap: nowrap
+}
+
+.kontaktoption__accordion.ui-accordion .ui-accordion-header {
+    margin-top: 0;
+    padding: 0
+}
+
+.kontaktoption__accordion.ui-accordion .ui-accordion-content {
+    padding: 0 0 8px;
+    margin-top: 0;
+    top: 0;
+    margin-bottom: 0;
+    overflow: visible
+}
+
+.kontaktoption__accordion .ui-accordion-header:after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    margin-top: -9px;
+    border-top: 1px solid #454542;
+    border-right: 1px solid #454542;
+    transform: rotate(135deg);
+    transition: transform .4s
+}
+
+.kontaktoption__accordion .ui-accordion-header.ui-state-active:after {
+    transform: rotate(-45deg)
+}
+
+.kontaktoption__accordion .kontaktoption__text,
+.kontaktoption__accordion .kontaktoption__titel {
+    padding-right: 25px
+}
+
+.kontaktoption__link {
+    width: 100%
+}
+
+.kontaktoption__link:active,
+.kontaktoption__link:focus,
+.kontaktoption__link:hover {
+    cursor: pointer
+}
+
+.kontaktoption__link--link {
+    text-decoration: none
+}
+
+.kontaktoption__link--link .kontaktoption__content {
+    margin: 22px 24px
+}
+
+.kontaktoption__link--link:after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    margin-top: -9px;
+    border-top: 1px solid #454542;
+    border-right: 1px solid #454542;
+    transform: rotate(45deg);
+    transition: right .2s ease-in-out
+}
+
+.kontaktoption__link--link:active .kontaktoption__titel,
+.kontaktoption__link--link:hover .kontaktoption__titel {
+    text-decoration: underline
+}
+
+.kontaktoption__link--link:active:after,
+.kontaktoption__link--link:hover:after {
+    right: 0
+}
+
+.kontaktoption__link--link:focus .kontaktoption__titel {
+    text-decoration: underline
+}
+
+.kontaktoption__inside {
+    position: relative;
+    margin-left: 60px
+}
+
+.kontaktoption__link--telefon {
+    text-decoration: none
+}
+
+.kontaktoption__link--telefon:hover .kontaktoption-telefon__telefonnummer {
+    text-decoration: underline
+}
+
+.kontaktoption__link--simple {
+    text-decoration: none
+}
+
+.kontaktoption__link--simple .kontaktoption__titel {
+    font-size: 18px;
+    margin-bottom: 5px
+}
+
+.kontaktoption__link--simple .kontaktoption__content {
+    margin: 22px 0
+}
+
+.kontaktoption__link--simple:active .kontaktoption__titel,
+.kontaktoption__link--simple:focus .kontaktoption__titel,
+.kontaktoption__link--simple:hover .kontaktoption__titel {
+    text-decoration: underline
+}
+
+.kontaktoption__mitgliedwerden {
+    min-height: 116px
+}
+
+.kontaktoption__icon {
+    width: 60px;
+    height: 60px;
+    order: 1;
+    margin: auto
+}
+
+.kontaktoption__icon img {
+    height: 100%
+}
+
+.kontaktoption__content {
+    margin: 22px 0 22px 24px;
+    order: 2;
+    flex-grow: 1
+}
+
+.kontaktoption__content a {
+    text-decoration: none
+}
+
+.kontaktoption__titel {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    text-align: left;
+    color: #454542
+}
+
+.kontaktoption__titel a {
+    text-decoration: none
+}
+
+.block {
+    display: block
+}
+
+.kontaktoption__geschlossen__text {
+    padding-right: 20px
+}
+
+.kontaktoption-linked__link {
+    text-decoration: none
+}
+
+.kontaktoption__text {
+    font-size: 16px;
+    padding-right: 20px
+}
+
+.kontaktoption__simple {
+    margin: 33px 0
+}
+
+.kontaktoption__simple__link {
+    font-size: 18px;
+    margin-bottom: 10px
+}
+
+.kontaktoption__simple__text {
+    font-size: 16px
+}
+
+.kontaktoption-button__teaser.flex-col--50 {
+    padding-right: 20px;
+    margin-bottom: 0
+}
+
+.kontaktoption-button__headline {
+    font-family: SoletoTKHeadline, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 22px
+}
+
+.kontaktoption-button__text {
+    font-family: SoletoTK, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 16px
+}
+
+.kontaktoption-button__link-container.flex-col--50 {
+    padding-right: 0;
+    margin-bottom: 0
+}
+
+.kontaktoption-button__button {
+    float: right
+}
+
+.show-button__container {
+    text-align: center
+}
+
+.show-button__container .kontaktoptionen__show-button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px
+}
+
+.show-button__container .kontaktoptionen__show-button:after {
+    content: "";
+    position: absolute;
+    background-image: url("/service/javax.faces.resource/img/expand.svg.app?ln=anwendungen");
+    background-size: cover;
+    width: 70px;
+    height: 18px;
+    bottom: -15px;
+    left: 47px
+}
+
+@media only screen and (max-width:760px) {
+    .kontaktoption.flex-grid.kontaktoption-button {
+        flex-wrap: wrap
+    }
+    .kontaktoption-button__button {
+        float: none;
+        margin-bottom: 20px;
+        width: 100%
+    }
+    .kontaktoption-button__teaser.flex-col--50 {
+        margin-bottom: 16px
+    }
+    .kontaktoption__text {
+        margin-bottom: 10px
+    }
+    .kontaktoption-button__headline,
+    .kontaktoption__titel {
+        font-size: 20px
+    }
+    .kontaktoption-telefon__bezeichnung {
+        display: none
+    }
+}

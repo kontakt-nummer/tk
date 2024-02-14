@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="icon" viewBox="0 0 46 29.91">
+			<line stroke="#faf9f7" fill="none" stroke-miterlimit="10" stroke-width="2" class="cls-1" y1="1" x2="46" y2="1"/>
+			<line stroke="#faf9f7" fill="none" stroke-miterlimit="10" stroke-width="2" class="cls-1" y1="15.15" x2="32.42" y2="15.15"/>
+			<line stroke="#faf9f7" fill="none" stroke-miterlimit="10" stroke-width="2" class="cls-1" y1="28.91" x2="40.96" y2="28.76"/>
+    </symbol>
+    <use xlink:href="#icon" />
+</svg>

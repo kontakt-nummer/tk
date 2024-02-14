@@ -1,0 +1,95 @@
+.kontakt-kundelink {
+    float: right;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid
+}
+
+.kontakt-service {
+    margin-top: 60px;
+    background-color: #f8f5c6;
+    padding: 40px 17px 46px 40px
+}
+
+.kontakt-service-text {
+    font-weight: 700;
+    margin-bottom: 22px
+}
+
+.kontakt-service-link,
+.kontakt-service-text {
+    font-family: SoletoTK, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    letter-spacing: 0;
+    font-size: 18px;
+    display: block
+}
+
+.kontakt-service-link {
+    font-weight: 400;
+    margin-left: 10px;
+    text-decoration: none
+}
+
+.kontakt-service-link:active,
+.kontakt-service-link:focus,
+.kontakt-service-link:hover {
+    text-decoration: underline
+}
+
+.kontakt-service-link:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-left: -12px;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #292927;
+    border-right: 1px solid #292927;
+    transform: rotate(45deg)
+}
+
+.kontaktoption__content--link {
+    cursor: pointer
+}
+
+.kontakt-option-wrapper--firstsimple {
+    margin-top: 25px
+}
+
+@media only screen and (max-width:760px) {
+    .kontakt-service {
+        margin-top: 0;
+        padding: 17px 40px
+    }
+    .kontakt-service-text {
+        display: none
+    }
+    .kontakt-service-link {
+        font-family: SoletoTK, Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0;
+        font-size: 16px;
+        display: block
+    }
+    .kontaktoption__titel_telefon {
+        display: none
+    }
+    .kontaktoptionen__eintrag--secondary .kontaktoption__titel {
+        text-decoration: underline
+    }
+    .kontaktoption.kontaktoption__mitgliedwerden {
+        flex-wrap: wrap
+    }
+    .kontakt-kundelink {
+        margin-bottom: 0
+    }
+    .kontaktoption.kontaktoption__mitgliedwerden {
+        padding-top: 15px
+    }
+}
